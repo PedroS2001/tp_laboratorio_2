@@ -57,11 +57,8 @@ namespace Entidades
         {
             bool respuesta = int.TryParse(numero, out int resultado);
             if (respuesta)
-            { 
-                if (resultado > 0)
-                    numero = Convert.ToString(resultado, 2);
-                else
-                    numero = "Valor invalido";
+            {
+                numero = DecimalBinario(resultado);
             }
             return numero;
         }
