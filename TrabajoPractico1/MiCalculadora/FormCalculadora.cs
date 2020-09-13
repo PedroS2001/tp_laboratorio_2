@@ -19,14 +19,14 @@ namespace MiCalculadora
             //agrego esto para que el primer operador sea en blanco y no nulo
             this.cmbOperador.Items.Insert(0, "");
             this.cmbOperador.SelectedIndex = 0;
+            
         }
 
 
         private void btnOperar_Click(object sender, EventArgs e)
         {
             double resultado;
-            string operador;
-            operador = this.cmbOperador.SelectedItem.ToString();
+            string operador = Convert.ToString(this.cmbOperador.SelectedItem);
             resultado = FormCalculadora.Operar(this.txtNumero1.Text, this.txtNumero2.Text, operador);
 
             this.lblResultado.Text = resultado.ToString();

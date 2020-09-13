@@ -55,9 +55,8 @@ namespace Entidades
         /// <returns></returns>
         public string DecimalBinario(string numero)
         {
-            int resultado; 
-            bool respuesta = int.TryParse(numero,out resultado);
-            if(respuesta)
+            bool respuesta = int.TryParse(numero, out int resultado);
+            if (respuesta)
             { 
                 if (resultado > 0)
                     numero = Convert.ToString(resultado, 2);
@@ -74,7 +73,7 @@ namespace Entidades
         /// <returns></returns>
         private bool EsBinario(string binario)
         {
-            char a = ' ';
+            char a;
             bool retorno = true;
             for(int i = 0; i< binario.Length;i++)
             {
@@ -94,8 +93,7 @@ namespace Entidades
         /// <returns></returns>
         private double ValidarNumero(string strNumero)
         {
-            double retorno = 0;
-            bool result = double.TryParse(strNumero, out retorno);
+            bool result = double.TryParse(strNumero, out double retorno);
             if (result)
                 return retorno;
             else
@@ -145,7 +143,7 @@ namespace Entidades
         }
         public static double operator /(Numero n1, Numero n2)
         {
-            double retorno =  0;
+            double retorno;
 
             if (n2 != 0)
                 retorno = n1.numero / n2.numero;
