@@ -22,7 +22,12 @@ namespace MiCalculadora
             
         }
 
-
+        /// <summary>
+        /// Convierte el operador en string para poder pasarlo como parametro en la funcion operar de FormCalculadora
+        /// Y luego retorna el resultado en un label
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOperar_Click(object sender, EventArgs e)
         {
             double resultado;
@@ -32,6 +37,13 @@ namespace MiCalculadora
             this.lblResultado.Text = resultado.ToString();
         }
 
+        /// <summary>
+        /// Convierte los strings recibidos como parametro en tipo Numero para poder llamar a la funcion Operar de calculadora, que hace la operacion
+        /// </summary>
+        /// <param name="numero1"></param>
+        /// <param name="numero2"></param>
+        /// <param name="operador"></param>
+        /// <returns></returns>
         private static double Operar(string numero1, string numero2, string operador)
         {
             Numero num1 = new Numero(numero1);
@@ -58,7 +70,7 @@ namespace MiCalculadora
         }
 
         /// <summary>
-        /// pregunta si esta seguro de cerrar la calculadora y la cierra
+        /// pregunta si esta seguro de cerrar la calculadora y en caso de ser si, la cierra
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -71,6 +83,11 @@ namespace MiCalculadora
             }
         }
 
+        /// <summary>
+        /// Valida que el numero en resultado no este vacio y luego llama a la funcion que trata de convertirlo a binario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
             Numero binario = new Numero();
@@ -80,6 +97,11 @@ namespace MiCalculadora
                 this.lblResultado.Text = "Valor invalido";
         }
 
+        /// <summary>
+        /// Si el resultado no esta vacio llama a la funicon que verifica que sea binario y lo convierte a decimal de ser posible
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
             Numero nDecimal = new Numero();

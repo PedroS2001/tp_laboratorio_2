@@ -59,11 +59,10 @@ namespace Entidades
                 case "*":
                     retorno = num1 * num2;
                     break;
-                case "/":
-                    if (num2 != 0)
+                case "/": //No se valida que sea distinto de 0 xq eso lo valida el mismo operador
                         retorno = num1 / num2;
                     break;
-                default:
+                default: //En caso de que no sea -,*,o /, cualquier otro caracter devuelve +
                     retorno = num1 + num2;
                     break;
             }

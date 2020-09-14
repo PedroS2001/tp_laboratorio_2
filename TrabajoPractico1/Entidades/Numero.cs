@@ -49,7 +49,7 @@ namespace Entidades
         }
 
         /// <summary>
-        /// toma un numero como string y lo convierte en binario como string. is no puede devuelve valor invalido
+        /// toma un numero como string y lo convierte en binario como string. si no puede devuelve valor invalido
         /// </summary>
         /// <param name="numero"></param>
         /// <returns></returns>
@@ -72,10 +72,10 @@ namespace Entidades
         {
             char a;
             bool retorno = true;
-            for(int i = 0; i< binario.Length;i++)
+            for(int i = 0; i < binario.Length; i++)
             {
                 a = binario[i];
-                if(a != '0' && a != '1')
+                if(a != '0' && a != '1')    //Si algun numero es distinto de 1 o 0 devuelve false
                 {
                     retorno = false;
                 }
@@ -84,7 +84,7 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Recibe un string y valida que sea un numero valido. sino devuelve 0
+        /// Recibe un string y valida que sea un numero valido. si no es, devuelve 0
         /// </summary>
         /// <param name="strNumero"></param>
         /// <returns></returns>
