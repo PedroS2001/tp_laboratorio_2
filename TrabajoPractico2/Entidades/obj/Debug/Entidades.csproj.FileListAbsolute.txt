@@ -17,3 +17,9 @@ C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\_TP2\TP-02\Entidade
 C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\_TP2\TP-02\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\_TP2\TP-02\Entidades\obj\Debug\Entidades.dll
 C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\_TP2\TP-02\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\Entidades\bin\Debug\Entidades.dll
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\Entidades\obj\Debug\Entidades.dll
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\Entidades\obj\Debug\Entidades.pdb

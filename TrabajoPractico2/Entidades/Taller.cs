@@ -63,17 +63,23 @@ namespace Entidades
                 {
                     case ETipo.Ciclomotor:
                         if(v is Ciclomotor)
+                        {
                             sb.AppendLine(v.Mostrar());
+                        }
                         break;
                     case ETipo.Sedan:
                         if (v is Sedan)
+                        { 
                             sb.AppendLine(v.Mostrar());
+                        }
                         break;
                     case ETipo.SUV:
                         if (v is Suv)
+                        {
                             sb.AppendLine(v.Mostrar());
+                        }
                         break;
-                    default:
+                    default:    //en caso de ser tipo TODOS
                         sb.AppendLine(v.Mostrar());
                         break;
                 }
@@ -85,7 +91,7 @@ namespace Entidades
 
         #region "Operadores"
         /// <summary>
-        /// Agregará un elemento a la lista
+        /// Agregará un elemento a la lista a menos que el elemento ya este o el taller este lleno
         /// </summary>
         /// <param name="taller">Objeto donde se agregará el elemento</param>
         /// <param name="vehiculo">Objeto a agregar</param>
@@ -94,12 +100,17 @@ namespace Entidades
         {
             foreach (Vehiculo v in taller.vehiculos)
             {
+                //si el vehiculo ya esta en la lista no agrego y salgo directamente
                 if (v == vehiculo)
+                {
                     return taller;
+                }
             }
-
+            //si el taller esta lleno no lo agrega
             if(taller.vehiculos.Count < 6)
+            {
                 taller.vehiculos.Add(vehiculo);
+            }
 
             return taller;
         }
@@ -113,6 +124,7 @@ namespace Entidades
         {
             foreach (Vehiculo v in taller.vehiculos)
             {
+                //si encuentro al vehiculo dentro del taller lo remuevo
                 if (v == vehiculo)
                 {
                     taller.vehiculos.Remove(vehiculo);

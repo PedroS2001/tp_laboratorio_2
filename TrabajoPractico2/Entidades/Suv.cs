@@ -23,6 +23,10 @@ namespace Entidades
             }
         }
 
+        /// <summary>
+        /// Retorna los datos de un SUV como string para ser mostrado
+        /// </summary>
+        /// <returns></returns>
         public override sealed string Mostrar()
         {
             StringBuilder sb = new StringBuilder();

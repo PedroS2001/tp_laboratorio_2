@@ -31,3 +31,13 @@ C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\_TP2\TP-02\TP-02\ob
 C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\_TP2\TP-02\TP-02\obj\Debug\TP-02.csproj.CopyComplete
 C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\_TP2\TP-02\TP-02\obj\Debug\TP-02.exe
 C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\_TP2\TP-02\TP-02\obj\Debug\TP-02.pdb
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\TP-02\bin\Debug\TP-02.exe.config
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\TP-02\bin\Debug\TP-02.exe
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\TP-02\bin\Debug\TP-02.pdb
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\TP-02\bin\Debug\Entidades.dll
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\TP-02\bin\Debug\Entidades.pdb
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\TP-02\obj\Debug\TP-02.csprojAssemblyReference.cache
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\TP-02\obj\Debug\TP-02.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\TP-02\obj\Debug\TP-02.csproj.CopyComplete
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\TP-02\obj\Debug\TP-02.exe
+C:\Users\Pedro\Desktop\PEDRO\2_Programacion y Laboratorio II\Trabajos Practicos\tp_laboratorio_2\TrabajoPractico2\TP-02\obj\Debug\TP-02.pdb
