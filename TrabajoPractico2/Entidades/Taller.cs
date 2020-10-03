@@ -11,14 +11,16 @@ namespace Entidades
     /// </summary>
     public sealed class Taller
     {
-        private List<Vehiculo> vehiculos;
-        private int espacioDisponible;
-
-
         public enum ETipo
         {
-            Ciclomotor, Sedan, SUV, Todos
+            Ciclomotor,
+            Sedan,
+            SUV,
+            Todos
         }
+
+        private List<Vehiculo> vehiculos;
+        private int espacioDisponible;
 
         #region "Constructores"
         private Taller()

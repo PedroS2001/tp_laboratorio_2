@@ -12,12 +12,13 @@ namespace Entidades
     {
         public enum ETipo 
         {
-            CuatroPuertas, CincoPuertas 
+            CuatroPuertas,
+            CincoPuertas 
         }
         private ETipo tipo;
 
         /// <summary>
-        /// Por defecto, TIPO será Monovolumen
+        /// Por defecto, TIPO será CuatroPuertas(Arreglado como dijo Fede en Slack
         /// </summary>
         /// <param name="marca"></param>
         /// <param name="chasis"></param>
@@ -35,7 +36,7 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Los automoviles son medianos
+        /// Los Sedan son medianos
         /// </summary>
         protected override ETamanio Tamanio
         {

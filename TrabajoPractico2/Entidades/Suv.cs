@@ -13,13 +13,13 @@ namespace Entidades
         {
         }
         /// <summary>
-        /// Las camionetas son Medianas
+        /// Las camionetas son GRANDES (Arreglado como dijo Fede en el slack)
         /// </summary>
         protected override ETamanio Tamanio
         {
             get
             {
-                return ETamanio.Mediano;
+                return ETamanio.Grande;
             }
         }
 

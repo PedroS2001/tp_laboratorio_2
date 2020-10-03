@@ -14,11 +14,19 @@ namespace Entidades
         #region enumerados
         public enum EMarca
         {
-            Chevrolet, Ford, Renault, Toyota, BMW, Honda, HarleyDavidson
+            Chevrolet,
+            Ford,
+            Renault,
+            Toyota,
+            BMW,
+            Honda,
+            HarleyDavidson
         }
         public enum ETamanio
         {
-            Chico, Mediano, Grande
+            Chico,
+            Mediano,
+            Grande
         }
         #endregion
 
