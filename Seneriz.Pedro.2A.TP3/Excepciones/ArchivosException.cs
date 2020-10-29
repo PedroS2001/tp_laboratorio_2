@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Excepciones
 {
-    public class ArchivosException
+    public class ArchivosException : Exception
     {
-        ArchivosException(Exception innerException)
+        public ArchivosException(Exception innerException)
+            :base(innerException.ToString())
         {
-            throw innerException;
         }
     }
 }
