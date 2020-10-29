@@ -23,7 +23,6 @@ namespace ClasesAbstractas
             this.legajo = legajo;
         }
 
-
         #endregion
 
         #region Metodos
@@ -50,8 +49,7 @@ namespace ClasesAbstractas
 
         #endregion
 
-        #region Operadores
-        
+        #region Operadores  
         public static bool operator ==(Universitario pg1, Universitario pg2)
         {
             if(pg1.Equals(pg2))

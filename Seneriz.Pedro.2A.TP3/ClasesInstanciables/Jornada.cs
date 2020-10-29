@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using static ClasesInstanciables.Universidad;
@@ -57,7 +58,7 @@ namespace ClasesInstanciables
 
         private Jornada()
         {
-           //this.alumnos 
+            this.alumnos = new List<Alumno>();
         }
 
         public Jornada(EClases clase, Profesor instructor)
@@ -84,7 +85,46 @@ namespace ClasesInstanciables
 
         #endregion
 
+        #region Operadores
+        
+        public static bool operator ==(Jornada j, Alumno a)
+        {
+            if(j.Alumnos.Contains(a))
+            {
+                return true;
+            }
+            return false;
+        }
+        public static bool operator !=(Jornada j, Alumno a)
+        {
+            return !(j == a);
+        }
 
+        public static Jornada operator +(Jornada j, Alumno a)
+        {
+            if(j != a)
+            {
+                j.Alumnos.Add(a);
+            }
+            return j;
+        }
+        #endregion
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("JORNADA:");
+            sb.Append("CLASE DE " + this.Clase);
+            sb.AppendLine(" POR NOMBRE COMPLETO: " + this.Instructor.ToString());
+            sb.AppendLine("ALUMNOS: ");
+            foreach(Alumno item in this.Alumnos)
+            {
+                sb.AppendLine(item.ToString());
+            }
+            sb.AppendLine("<------------------------------------------------->");
+            
+            return sb.ToString();
+        }
 
     }
 }

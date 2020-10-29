@@ -30,9 +30,7 @@ namespace ClasesInstanciables
         }
 
 
-
         #endregion
-
 
         #region Metodos
 
@@ -48,7 +46,7 @@ namespace ClasesInstanciables
 
         protected override string ParticiparEnClase()
         {
-            return ("CLASES DEL DIA " + this.clasesDelDia);
+            return "CLASES DEL DIA " + this.clasesDelDia.ToString();
         }
 
         public override string ToString()
