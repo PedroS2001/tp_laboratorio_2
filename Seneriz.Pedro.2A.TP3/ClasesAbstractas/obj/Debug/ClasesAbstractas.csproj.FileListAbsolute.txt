@@ -1,0 +1,9 @@
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\ClasesAbstractas\bin\Debug\ClasesAbstractas.dll
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\ClasesAbstractas\bin\Debug\ClasesAbstractas.pdb
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\ClasesAbstractas\bin\Debug\Excepciones.dll
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\ClasesAbstractas\bin\Debug\Excepciones.pdb
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\ClasesAbstractas\obj\Debug\ClasesAbstractas.csprojAssemblyReference.cache
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\ClasesAbstractas\obj\Debug\ClasesAbstractas.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\ClasesAbstractas\obj\Debug\ClasesAbstractas.csproj.CopyComplete
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\ClasesAbstractas\obj\Debug\ClasesAbstractas.dll
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\ClasesAbstractas\obj\Debug\ClasesAbstractas.pdb

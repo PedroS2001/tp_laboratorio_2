@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,20 +16,21 @@ namespace ClasesInstanciables
         private static Random random;
 
         #region Constructores
-
         static Profesor()
         {
+            Profesor.random = new Random();
         }
-        private Profesor()
+        public Profesor()
         {
-            _randomClases();
         }
 
         public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
             : base(id,nombre,apellido,dni,nacionalidad)
         {
-        }
+            this.clasesDelDia = new Queue<EClases>();
+            this._randomClases();
 
+        }
 
         #endregion
 
@@ -38,15 +40,22 @@ namespace ClasesInstanciables
         {
             StringBuilder sb = new StringBuilder();
             
-            sb.AppendLine(base.MostrarDatos());
-            sb.AppendLine(ParticiparEnClase());
+            sb.Append(base.MostrarDatos());
+            sb.AppendLine(this.ParticiparEnClase());
 
             return sb.ToString();
         }
 
         protected override string ParticiparEnClase()
         {
-            return "CLASES DEL DIA " + this.clasesDelDia.ToString();
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine("CLASES DEL DIA:");
+            foreach(EClases item in this.clasesDelDia)
+            {
+                sb.AppendLine(item.ToString());
+            }
+            return sb.ToString();
         }
 
         public override string ToString()
@@ -56,8 +65,8 @@ namespace ClasesInstanciables
 
         private void _randomClases()
         {
-            this.clasesDelDia.Enqueue(new EClases());
-            this.clasesDelDia.Enqueue(new EClases());
+            this.clasesDelDia.Enqueue((EClases)random.Next(0, 3));
+            this.clasesDelDia.Enqueue((EClases)random.Next(0, 3));
         }
 
         #endregion

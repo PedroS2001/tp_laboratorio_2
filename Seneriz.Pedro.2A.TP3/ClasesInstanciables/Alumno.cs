@@ -29,21 +29,18 @@ namespace ClasesInstanciables
 
         public Alumno() : base()
         {
-            this.claseQueToma = EClases.Laboratorio;
-            this.estadoCuenta = EEstadoCuenta.AlDia;
         }
 
         public Alumno(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, EClases claseQueToma)
             :base(id,nombre,apellido,dni,nacionalidad)
         {
             this.claseQueToma = claseQueToma;
-            this.estadoCuenta = EEstadoCuenta.AlDia;
         }
         
         public Alumno(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, EClases claseQueToma, EEstadoCuenta estadoCuenta)
             :this(id,nombre,apellido,dni,nacionalidad,claseQueToma)
         {
-            this.estadoCuenta = EEstadoCuenta.AlDia;
+            this.estadoCuenta = estadoCuenta;
         }
 
 
@@ -56,19 +53,31 @@ namespace ClasesInstanciables
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine(base.MostrarDatos());
-            sb.AppendLine("ESTADO DE CUENTA: " + this.estadoCuenta);
+            sb.Append("ESTADO DE CUENTA: ");
+            switch(this.estadoCuenta)
+            {
+                case EEstadoCuenta.AlDia:
+                    sb.AppendLine("Cuota al dia");
+                    break;
+                case EEstadoCuenta.Becado:
+                    sb.AppendLine("Alumno becado");
+                    break;
+                case EEstadoCuenta.Deudor:
+                    sb.AppendLine("Alumno deudor");
+                    break;
+            }
             sb.AppendLine(ParticiparEnClase());
 
             return sb.ToString();
         }
         protected override string ParticiparEnClase()
         {
-            return ("TOMA CLASES DE " + this.claseQueToma);
+            return "TOMA CLASES DE " + this.claseQueToma;
         }
 
         public override string ToString()
         {
-            return MostrarDatos();
+            return this.MostrarDatos();
         }
 
         #endregion

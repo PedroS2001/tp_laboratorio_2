@@ -31,7 +31,7 @@ namespace ClasesAbstractas
         {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine(base.ToString());
-            sb.AppendLine("LEGAJO NúMERO : " + this.legajo);
+            sb.AppendLine("LEGAJO NúMERO: " + this.legajo);
 
             return sb.ToString();
         }
@@ -42,7 +42,10 @@ namespace ClasesAbstractas
         {
             if(obj is Universitario)
             {
-                return true;
+                if (this == (Universitario)obj)
+                {
+                    return true;
+                }
             }
             return false;
         }
@@ -52,12 +55,9 @@ namespace ClasesAbstractas
         #region Operadores  
         public static bool operator ==(Universitario pg1, Universitario pg2)
         {
-            if(pg1.Equals(pg2))
+            if(pg1.DNI == pg2.DNI || pg1.legajo == pg2.legajo)
             {
-                if(pg1.DNI == pg2.DNI || pg1.legajo == pg2.legajo)
-                {
-                    return true;
-                }
+                return true;
             }
             return false;
         }

@@ -1,0 +1,9 @@
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\Archivos\bin\Debug\Archivos.dll
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\Archivos\bin\Debug\Excepciones.dll
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\Archivos\bin\Debug\Excepciones.pdb
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\Archivos\obj\Debug\Archivos.csproj.CopyComplete
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\Archivos\obj\Debug\Archivos.dll
+C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\Archivos\obj\Debug\Archivos.pdb

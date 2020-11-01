@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Archivos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -72,26 +73,49 @@ namespace ClasesInstanciables
 
         #region Metodos
 
-        /*public static bool Guardar(Jornada jornada)
+        public static bool Guardar(Jornada jornada)
         {
-
+            Texto nuevoTexto = new Texto();
+            return nuevoTexto.Guardar("jornada.txt", jornada.ToString());
         }
 
-        public static bool Leer()
+        public static string Leer()
         {
-        }
-        */
+            string retorno;
+            Texto textoLeido = new Texto();
+            textoLeido.Leer("jornada.txt", out retorno);
 
+            return retorno;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("CLASE DE " + this.Clase);
+            sb.AppendLine(" POR " + this.Instructor.ToString());
+            sb.AppendLine("ALUMNOS: ");
+            foreach (Alumno item in this.Alumnos)
+            {
+                sb.AppendLine(item.ToString());
+            }
+            sb.AppendLine("<------------------------------------------------->");
+
+            return sb.ToString();
+        }
 
         #endregion
 
         #region Operadores
-        
+
         public static bool operator ==(Jornada j, Alumno a)
         {
-            if(j.Alumnos.Contains(a))
+            foreach(Alumno item in j.Alumnos)
             {
-                return true;
+                if(item.Equals(a))
+                {
+                    return true;
+                }
             }
             return false;
         }
@@ -110,21 +134,7 @@ namespace ClasesInstanciables
         }
         #endregion
 
-        public override string ToString()
-        {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine("JORNADA:");
-            sb.Append("CLASE DE " + this.Clase);
-            sb.AppendLine(" POR NOMBRE COMPLETO: " + this.Instructor.ToString());
-            sb.AppendLine("ALUMNOS: ");
-            foreach(Alumno item in this.Alumnos)
-            {
-                sb.AppendLine(item.ToString());
-            }
-            sb.AppendLine("<------------------------------------------------->");
-            
-            return sb.ToString();
-        }
+       
 
     }
 }

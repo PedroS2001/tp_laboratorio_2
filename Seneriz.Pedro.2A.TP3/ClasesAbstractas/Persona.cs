@@ -1,4 +1,5 @@
-﻿ using System;
+﻿using Excepciones;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,7 +30,7 @@ namespace ClasesAbstractas
             }
             set 
             { 
-                this.apellido = value; 
+                this.apellido = ValidarNombreApellido(value); 
             }
         }
         public string Nombre
@@ -40,7 +41,7 @@ namespace ClasesAbstractas
             }
             set
             {
-                this.nombre = value;
+                this.nombre = ValidarNombreApellido(value);
             }
         }
 
@@ -52,7 +53,7 @@ namespace ClasesAbstractas
             }
             set
             {
-                this.dni = value;
+                this.dni = ValidarDni(this.Nacionalidad, value);
             }
         }
 
@@ -60,7 +61,7 @@ namespace ClasesAbstractas
         {
             set
             {
-                this.dni = Convert.ToInt32(value);
+                this.dni = ValidarDni(this.Nacionalidad, value);
             }
         }
 
@@ -122,42 +123,53 @@ namespace ClasesAbstractas
         
         private int ValidarDni(ENacionalidad nacionalidad, int dato)
         {
-            return this.ValidarDni(nacionalidad,dato.ToString());
-        }
-
-        private int ValidarDni(ENacionalidad nacionalidad, string dato)
-        {
-            int aux = Convert.ToInt32(dato);
-            //Es necesario para saber que se pudo convertir y tiene 8 caracteres. en caso de no poder convertirse el valor de aux sera 0
-            if(aux.ToString().Length == 8)
+            if(dato > 1 || dato < 99999999)
             {
-                if((nacionalidad == ENacionalidad.Argentino && aux >= 1 && aux <= 89999999) || (nacionalidad == ENacionalidad.Extranjero && aux >= 90000000 && aux <= 99999999))
+
+                if ((nacionalidad == ENacionalidad.Argentino && dato >= 1 && dato <= 89999999) || (nacionalidad == ENacionalidad.Extranjero && dato >= 90000000 && dato <= 99999999))
                 {
-                    return aux;
+                    return dato;
                 }
-                else 
+                else
                 {
-                    //NACIONALIDADINVALIDAEXEPTION
+                    throw new NacionalidadInvalidaException();
                 }
             }
             else
             {
-                //DNIINVALIDOEXCEPCION
+                throw new DniInvalidoException();
             }
-
-            return -1;
         }
 
-        /*private string ValidarNombreApellido(string dato)
+        private int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
-            
+            int aux;
 
-        }*/
+            if(int.TryParse(dato, out aux))
+            {
+                return ValidarDni(nacionalidad, aux);
+            }
+            else
+            {
+                throw new DniInvalidoException();
+            }
+
+        }
+
+        private string ValidarNombreApellido(string dato)
+        {
+            foreach(char item in dato)
+            {
+                if (!(char.IsLetter(item) || char.IsWhiteSpace(item)))
+                {
+                    return null;
+                }
+            }
+
+            return dato;
+        }
         
-
         #endregion
-
-
 
     }
 
