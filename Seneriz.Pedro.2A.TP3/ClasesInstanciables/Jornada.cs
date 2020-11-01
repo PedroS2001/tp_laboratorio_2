@@ -11,9 +11,11 @@ namespace ClasesInstanciables
 {
     public class Jornada
     {
+        #region Atributos
         private List<Alumno> alumnos;
         private EClases clase;
         private Profesor instructor;
+        #endregion
 
         #region propiedades
 
@@ -57,11 +59,19 @@ namespace ClasesInstanciables
 
         #region Constructores
 
+        /// <summary>
+        /// Constructor por default. Inicializa la lista de alumnos
+        /// </summary>
         private Jornada()
         {
             this.alumnos = new List<Alumno>();
         }
 
+        /// <summary>
+        /// Constructor que recibe clase y profesor
+        /// </summary>
+        /// <param name="clase"></param>
+        /// <param name="instructor"></param>
         public Jornada(EClases clase, Profesor instructor)
             :this()
         {
@@ -73,12 +83,20 @@ namespace ClasesInstanciables
 
         #region Metodos
 
+        /// <summary>
+        /// Metodo que guarda una jornada en un archivo de texto llamado "jornada.txt"
+        /// </summary>
+        /// <param name="jornada">Jornada que quiere ser guardada</param>
+        /// <returns></returns>
         public static bool Guardar(Jornada jornada)
         {
             Texto nuevoTexto = new Texto();
             return nuevoTexto.Guardar("jornada.txt", jornada.ToString());
         }
-
+        /// <summary>
+        /// Metodo que lee un archivo de texto llamado "jornada.txt"
+        /// </summary>
+        /// <returns>Retorna en formato string los datos de jornada leidos</returns>
         public static string Leer()
         {
             string retorno;
@@ -87,7 +105,10 @@ namespace ClasesInstanciables
 
             return retorno;
         }
-
+        /// <summary>
+        /// Muestra todos los datos de la jornada
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -108,6 +129,12 @@ namespace ClasesInstanciables
 
         #region Operadores
 
+        /// <summary>
+        /// Una Jornada será igual a un Alumno si el mismo participa de la clase.
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator ==(Jornada j, Alumno a)
         {
             foreach(Alumno item in j.Alumnos)
@@ -119,11 +146,22 @@ namespace ClasesInstanciables
             }
             return false;
         }
+        /// <summary>
+        /// Una Jornada será desigual a un Alumno si el mismo no participa de la clase.
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator !=(Jornada j, Alumno a)
         {
             return !(j == a);
         }
-
+        /// <summary>
+        /// Agrega un alumno a la jornada controlando que no este previamente cargado
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static Jornada operator +(Jornada j, Alumno a)
         {
             if(j != a)
@@ -133,8 +171,6 @@ namespace ClasesInstanciables
             return j;
         }
         #endregion
-
-       
 
     }
 }

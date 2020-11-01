@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Archivos
 {
+
+    /// <summary>
+    /// Interfaz generica con firmas para Guardar y Leer
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public interface IArchivo<T>
     {
         bool Guardar(string archivo, T datos);

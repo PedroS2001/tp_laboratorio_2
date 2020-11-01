@@ -10,18 +10,26 @@ namespace ClasesAbstractas
 {
     public abstract class Persona
     {
+        #region atributos
         private string nombre;
         private string apellido;
         private int dni;
         private ENacionalidad nacionalidad;
+        #endregion
+
+        #region enumerado
         public enum ENacionalidad
         {
             Argentino,
             Extranjero
         }
-
+        #endregion
 
         #region Propiedades
+
+        /// <summary>
+        /// Propiedad que valida que el apellido sea valido antes de asignarlo
+        /// </summary>
         public string Apellido
         {
             get 
@@ -33,6 +41,9 @@ namespace ClasesAbstractas
                 this.apellido = ValidarNombreApellido(value); 
             }
         }
+        /// <summary>
+        /// Propiedad que valida que el nombre sea valido antes de asignarlo
+        /// </summary>
         public string Nombre
         {
             get
@@ -45,6 +56,9 @@ namespace ClasesAbstractas
             }
         }
 
+        /// <summary>
+        /// Propiedad que valida que el dni sea valido antes de asignarlo
+        /// </summary>
         public int DNI
         {
             get
@@ -57,6 +71,9 @@ namespace ClasesAbstractas
             }
         }
 
+        /// <summary>
+        /// Propiedad que valida que el dni en formato cadena sea valido antes de asignarlo
+        /// </summary>
         public string StringToDNI
         {
             set
@@ -65,6 +82,9 @@ namespace ClasesAbstractas
             }
         }
 
+        /// <summary>
+        /// Propiedad que asigna la nacionalidad
+        /// </summary>
         public ENacionalidad Nacionalidad
         {
             get
@@ -80,11 +100,19 @@ namespace ClasesAbstractas
         #endregion
 
         #region Constructores
-
+        /// <summary>
+        /// Constructor por default
+        /// </summary>
         public Persona()
         {
         }
 
+        /// <summary>
+        /// Constructor con parametros
+        /// </summary>
+        /// <param name="nombre">Nombre de la persona</param>
+        /// <param name="apellido">Apellido de la persona</param>
+        /// <param name="nacionalidad">Nacionalidad de la persona</param>
         public Persona(string nombre, string apellido, ENacionalidad nacionalidad)
             : this()
         {
@@ -93,12 +121,25 @@ namespace ClasesAbstractas
             this.Nacionalidad = nacionalidad;
         }
 
+        /// <summary>
+        /// Constructor con parametros
+        /// </summary>
+        /// <param name="nombre">Nombre de la persona</param>
+        /// <param name="apellido">Apellido de la persona</param>
+        /// <param name="dni">Dni de la persona</param>
+        /// <param name="nacionalidad">Nacionalidad de la persona</param>
         public Persona(string nombre, string apellido, int dni, ENacionalidad nacionalidad)
             :this(nombre,apellido,nacionalidad)
         {
             this.DNI = dni;
         }
-
+        /// <summary>
+        /// Constructor con parametros
+        /// </summary>
+        /// <param name="nombre">Nombre de la persona</param>
+        /// <param name="apellido">Apellido de la persona</param>
+        /// <param name="dni">Dni de la persona en formato de cadena</param>
+        /// <param name="nacionalidad">Nacionalidad de la persona</param>
         public Persona(string nombre, string apellido, string dni, ENacionalidad nacionalidad)
             :this(nombre,apellido,nacionalidad)
         {
@@ -109,6 +150,10 @@ namespace ClasesAbstractas
 
         #region Metodos
 
+        /// <summary>
+        /// Convierte los datos de la persona en string
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -121,6 +166,12 @@ namespace ClasesAbstractas
             return sb.ToString();
         }
         
+        /// <summary>
+        /// Valida que el dni sea valido, pudiendo lanzar dos excepciones en caso contrario
+        /// </summary>
+        /// <param name="nacionalidad">Nacionalidad de la persona</param>
+        /// <param name="dato">Dni de la persona</param>
+        /// <returns></returns>
         private int ValidarDni(ENacionalidad nacionalidad, int dato)
         {
             if(dato > 1 || dato < 99999999)
@@ -141,6 +192,12 @@ namespace ClasesAbstractas
             }
         }
 
+        /// <summary>
+        /// Valida que el dni pasado en formato string sea un dni valido. pudiendo lanzar excepciones en caso contrario
+        /// </summary>
+        /// <param name="nacionalidad">Nacionalidad de la persona</param>
+        /// <param name="dato">Dni de la persona</param>
+        /// <returns></returns>
         private int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
             int aux;
@@ -156,6 +213,11 @@ namespace ClasesAbstractas
 
         }
 
+        /// <summary>
+        /// Valida que una cadena sea un nombre valido, siendo todas letras o espacios
+        /// </summary>
+        /// <param name="dato">Cadena que se va a validar</param>
+        /// <returns></returns>
         private string ValidarNombreApellido(string dato)
         {
             foreach(char item in dato)

@@ -240,3 +240,87 @@ TOMA CLASES DE Programacion
 
 <------------------------------------------------->
 
+CLASE DE Programacion POR NOMBRE COMPLETO: Juarez, Roberto
+NACIONALIDAD: Argentino
+
+LEGAJO NúMERO: 2
+CLASES DEL DIA:
+Programacion
+Laboratorio
+
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+LEGAJO NúMERO: 1
+
+ESTADO DE CUENTA: Alumno becado
+TOMA CLASES DE Programacion
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+
+LEGAJO NúMERO: 5
+
+ESTADO DE CUENTA: Cuota al dia
+TOMA CLASES DE Programacion
+
+<------------------------------------------------->
+
+CLASE DE Programacion POR NOMBRE COMPLETO: Juarez, Roberto
+NACIONALIDAD: Argentino
+
+LEGAJO NúMERO: 2
+CLASES DEL DIA:
+Programacion
+Legislacion
+
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+LEGAJO NúMERO: 1
+
+ESTADO DE CUENTA: Alumno becado
+TOMA CLASES DE Programacion
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+
+LEGAJO NúMERO: 5
+
+ESTADO DE CUENTA: Cuota al dia
+TOMA CLASES DE Programacion
+
+<------------------------------------------------->
+
+CLASE DE Programacion POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+LEGAJO NúMERO: 1
+CLASES DEL DIA:
+Programacion
+Laboratorio
+
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+LEGAJO NúMERO: 1
+
+ESTADO DE CUENTA: Alumno becado
+TOMA CLASES DE Programacion
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+
+LEGAJO NúMERO: 5
+
+ESTADO DE CUENTA: Cuota al dia
+TOMA CLASES DE Programacion
+
+<------------------------------------------------->
+
