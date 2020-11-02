@@ -14,3 +14,19 @@ C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practic
 C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\Main\obj\Debug\Main.csproj.CopyComplete
 C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\Main\obj\Debug\Main.exe
 C:\Users\Pedro\Desktop\FACULTAD\2_Programacion y Laboratorio II\Trabajos Practicos(gitHub)\tp_laboratorio_2\Seneriz.Pedro.2A.TP3\Main\obj\Debug\Main.pdb
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\bin\Debug\Main.exe.config
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\bin\Debug\Main.exe
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\bin\Debug\Main.pdb
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\bin\Debug\Archivos.dll
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\bin\Debug\ClasesAbstractas.dll
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\bin\Debug\ClasesInstanciables.dll
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\bin\Debug\Excepciones.dll
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\bin\Debug\Archivos.pdb
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\bin\Debug\ClasesAbstractas.pdb
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\bin\Debug\ClasesInstanciables.pdb
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\bin\Debug\Excepciones.pdb
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\obj\Debug\Main.csprojAssemblyReference.cache
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\obj\Debug\Main.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\obj\Debug\Main.csproj.CopyComplete
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\obj\Debug\Main.exe
+C:\Users\Pedro\Desktop\tp_laboratorio_2-master\Seneriz.Pedro.2A.TP3\Main\obj\Debug\Main.pdb

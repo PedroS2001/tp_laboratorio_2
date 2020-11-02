@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excepciones", "Excepciones\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", "{2DB796C2-9864-4423-A446-CC30C612DCFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnitarios", "TestUnitarios\TestUnitarios.csproj", "{0533FA0B-6618-41A5-9126-C85466AACEEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2DB796C2-9864-4423-A446-CC30C612DCFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DB796C2-9864-4423-A446-CC30C612DCFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DB796C2-9864-4423-A446-CC30C612DCFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0533FA0B-6618-41A5-9126-C85466AACEEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0533FA0B-6618-41A5-9126-C85466AACEEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0533FA0B-6618-41A5-9126-C85466AACEEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0533FA0B-6618-41A5-9126-C85466AACEEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

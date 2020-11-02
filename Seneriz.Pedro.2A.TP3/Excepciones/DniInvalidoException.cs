@@ -9,7 +9,7 @@ namespace Excepciones
     public class DniInvalidoException : Exception
     {
         public DniInvalidoException()
-            :base()
+            :base("El dni es invalido.")
         {
         }
         public DniInvalidoException(Exception e)
