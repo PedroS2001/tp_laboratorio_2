@@ -10,14 +10,14 @@ namespace ClasesAbstractas
 {
     public abstract class Persona
     {
-        #region atributos
+        #region Atributos
         private string nombre;
         private string apellido;
         private int dni;
         private ENacionalidad nacionalidad;
         #endregion
 
-        #region enumerado
+        #region Enumerado
         public enum ENacionalidad
         {
             Argentino,
