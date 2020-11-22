@@ -1,0 +1,12 @@
+C:\Users\Pedro\Desktop\Seneriz.Pedro.2A.TP4\Entidades\bin\Debug\Entidades.dll
+C:\Users\Pedro\Desktop\Seneriz.Pedro.2A.TP4\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Pedro\Desktop\Seneriz.Pedro.2A.TP4\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Pedro\Desktop\Seneriz.Pedro.2A.TP4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Desktop\Seneriz.Pedro.2A.TP4\Entidades\obj\Debug\Entidades.dll
+C:\Users\Pedro\Desktop\Seneriz.Pedro.2A.TP4\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Pedro\Desktop\TP4Antiguedades\Seneriz.Pedro.2A.TP4\Entidades\bin\Debug\Entidades.dll
+C:\Users\Pedro\Desktop\TP4Antiguedades\Seneriz.Pedro.2A.TP4\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Pedro\Desktop\TP4Antiguedades\Seneriz.Pedro.2A.TP4\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Pedro\Desktop\TP4Antiguedades\Seneriz.Pedro.2A.TP4\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Desktop\TP4Antiguedades\Seneriz.Pedro.2A.TP4\Entidades\obj\Debug\Entidades.dll
+C:\Users\Pedro\Desktop\TP4Antiguedades\Seneriz.Pedro.2A.TP4\Entidades\obj\Debug\Entidades.pdb
